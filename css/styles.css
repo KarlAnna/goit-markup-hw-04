@@ -5,6 +5,7 @@
     --bg-color-grayish: #2f303a;
     --bg-color-whitish: #f5f4fa;
     --button-hover: #188ce8;
+    --icon-color: #afb1b8;
 }
 
 
@@ -181,27 +182,26 @@ hr {
 
 .characteristics-icon-list {
     display: flex;
+    align-items: center;
+    gap: 30px;
 }
 
 .characteristics-icon-list-item {
     color: var(--bg-color-whitish);
-    width: 270px;
-    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border-radius: 4px;
-}
-
-.characteristics-list {
-    display: inline-flex;
-}
-
-.characteristics-icon-list-item {
-    margin-right: 30px;
     margin-bottom: 30px;
 }
 
 .characteristics-icon {
     background-color: var(--bg-color-whitish);
     
+}
+
+.characteristics-list {
+    display: inline-flex;
 }
 
 .characteristics-list-item {
@@ -239,7 +239,7 @@ hr {
     padding-bottom: 94px;
 }
 
-.what-we-do-title, .our-team-title {
+.title {
     color: var(--title-color);
 
     font-weight: 700;
@@ -248,7 +248,7 @@ hr {
     text-align: center;
     letter-spacing: 0.03em;
 
-    width: 380px;
+    max-width: 400px;
     height: 42px;
     margin-left: 395px;
     margin-bottom: 50px;
@@ -276,7 +276,7 @@ hr {
     border-radius: 0px 0px 4px 4px;
 
     width: 267px;
-    height: 368px;
+    height: 428px;
 }
 
 .our-team-text {
@@ -302,6 +302,47 @@ hr {
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
+}
+
+.our-team-icon-list {
+    display: flex;
+    justify-content: center;
+    height: 45px;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.our-team-icon {
+    fill: var(--icon-color);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.our-team-icon:hover {
+    background-color: var(--accent-color);
+    fill: white;
+}
+
+.clients-icon-list {
+    display: flex;
+    gap: 30px;
+}
+
+.clients-icon {
+    fill: var(--icon-color);
+    background-color: var(--bg-color-whitish);
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px;
+}
+
+.clients-icon:hover {
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
 }
 
 /** FOOTER **/
