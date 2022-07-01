@@ -1,29 +1,13 @@
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
 
-/**======== Document ========**/
+/** RESETS **/
 
 *,
 ::before,
 ::after {
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
-
-html {
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
-    -moz-tab-size: 4;
-    tab-size: 4;
-}
-
-/**======== Sections ========**/
-
-body {
-    margin: 0;
-    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 
-    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
-}
-
 
 h1, h2, h3, h4, h5, h6, p, ul, ol, a {
     margin: 0;
@@ -47,6 +31,38 @@ a {
 
 span {
     display: inline-block;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+address {
+    font-style: normal;
+}
+
+
+/*? ================================================================================================================> **/
+
+
+/** MJDERN-NORMALIZE **/
+
+html {
+    box-sizing: border-box;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -moz-tab-size: 4;
+    tab-size: 4;
+}
+
+/**======== Sections ========**/
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto,
+        Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
 }
 
 /**==================== Text-level semantics ====================**/
