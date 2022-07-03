@@ -315,17 +315,19 @@ hr {
     margin-top: 20px;
 }
 
-.our-team-icon {
-    fill: var(--icon-color);
+.our-team-link {
     width: 44px;
     height: 44px;
+    fill: var(--icon-color);
     border-radius: 50%;
 }
 
-.our-team-icon:hover, .our-team-icon:focus {
+.our-team-link:hover, .our-team-link:focus {
     background-color: var(--accent-color);
     fill: white;
 }
+
+
 
 /* section 5 ------------------------------------------------------> */
 
@@ -409,7 +411,7 @@ footer {
     gap: 10px;
 }
 
-.footer-icon {
+.footer-icon-link {
     fill: white;
     background-color: rgba(255, 255, 255, 0.1);
     width: 44px;
@@ -417,7 +419,7 @@ footer {
     border-radius: 50%;
 }
 
-.footer-icon:hover, .footer-icon:focus {
+.footer-icon-link:hover, .footer-icon-link:focus {
     fill: white;
     background-color: var(--accent-color);
 }
